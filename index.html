@@ -16,6 +16,15 @@
         background-color: black;
         color: white;
       }
+      #button-scheme-row {
+        display: flex;
+        flex-direction: row;
+      }
+      .button {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body id = "body" class = "light">
@@ -71,20 +80,6 @@ Hello, and welcome user.
       function setlight() {
         manipel.className = "light";
       }
-      document.addEventListener('keydown', function(event) {
-        if (event.ctrlKey && event.shiftKey && event.code === "KeyS") {
-          event.preventDefault();
-          if (manipel.className === "light") {
-            setdark();
-          }
-          else if (manipel.className == "dark")  {
-            setlight();
-          }
-          else {
-            alert("don't tamper with the code unless you know what you are doing.");
-          }
-        }
-      });
     </script>
     
   </body>
