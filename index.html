@@ -35,9 +35,13 @@
         text-decoration-color: white;
         color: white;
       }
+      .button {
+        display: block;
+        color: rgb(128, 128, 128);
+      }
     </style>
   </head>
-  <body id = "body">
+  <body id = "body" class = "light">
 <!---primary content--->
     <main>
       <h1>Welcome To The Web</h1>
@@ -59,7 +63,7 @@ Hello, and welcome user.
       </div>
       <!---secondary content--->
     <div>
-      <!--put what friends want-->
+      <!--put what friends want for all content (reminder)-->
       <span>
         
       </span>
@@ -72,8 +76,8 @@ Hello, and welcome user.
 <a href = "https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors" target = "_blank">Github troubleshooting (custom domains)</a>
 
 <a href = "https://github.com/" target = "_blank">Github</a>
-        <button onclick = "setlight()">Light Mode</button>
-        <button onclick = "setdark()">Dark Mode</button>
+        <button onclick = "setlight()" class = "button">Light Mode</button>
+        <button onclick = "setdark()" class = "button">Dark Mode</button>
       </pre>
     </div>
     <script>
