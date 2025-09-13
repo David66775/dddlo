@@ -19,17 +19,25 @@
       }
       pre {
         text-decoration: underline overline;
-        text-decoration-color: black;
         font-family: "Comic Sans MS";
       }
       h1 {
         text-decoration: underline overline;
-        text-decoration-color: rgba(0, 0, 0, 0.5);
         font-family: "Comic Sans MS";
+      }
+      .light {
+        background-color: white;
+        text-decoration-color: black;
+        color: black;
+      }
+      .dark {
+        background-color: black;
+        text-decoration-color: white;
+        color: white;
       }
     </style>
   </head>
-  <body>
+  <body id = "body">
 <!---primary content--->
     <main>
       <h1>Welcome To The Web</h1>
@@ -61,13 +69,23 @@ Hello, and welcome user.
     <div>
       <!--dev links-->
       <pre>
-<a href = "https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors" target = "_blank">Github troubleshooting</a>
+<a href = "https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors" target = "_blank">Github troubleshooting (custom domains)</a>
 
 <a href = "https://github.com/" target = "_blank">Github</a>
+        <button onclick = "setlight()">Light Mode</button>
+        <button onclick = "setdark()">Dark Mode</button>
       </pre>
     </div>
     <script>
-      
+      let manipel = decument.getElementById("body");
+      function setdark() {
+        mainipel.removeAttribute("class");
+        manipel.setAttribute("class", "dark");
+      }
+      function setlight() {
+        mainipel.removeAttribute("class");
+        manipel.setAttribute("class", "light");
+      }
     </script>
     
   </body>
