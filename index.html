@@ -53,7 +53,8 @@
       }
       .button {
         display: block;
-        color: rgb(128, 128, 128);
+        color: black;
+        background-color: rgb(128, 128, 128);
       }
     </style>
   </head>
@@ -106,8 +107,8 @@ Hello, and welcome user.
       function setlight() {
         manipel.className = "light";
       }
-      document.addEventListener('keydown function(event) {
-        if (event.ctrlKey) {
+      document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === "S") {
           if (manipel.className === "light") {
             setdark();
           }
