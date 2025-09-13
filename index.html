@@ -109,8 +109,8 @@ Hello, and welcome user.
         manipel.className = "light";
       }
       document.addEventListener('keydown', function(event) {
-        event.preventDefault();
         if (event.ctrlKey && event.shiftKey && event.code === "KeyS") {
+          event.preventDefault();
           if (manipel.className === "light") {
             setdark();
           }
